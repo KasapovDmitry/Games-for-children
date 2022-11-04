@@ -1,0 +1,398 @@
+.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+.img {
+    max-width: 100%;
+}
+html,
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    margin: 0;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1210px;
+    padding: 0px 15px;
+    margin: 0 auto;
+
+}
+
+/*======================= ПЕРВЫЙ ЭКРАН ===================*/
+
+.screen1 {
+    min-height: 860px;
+    height: 100vh;
+    background-image: url(../image/fon1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.screen1-title {
+    display: block;
+    padding: 80px 0px 30px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.screen1-title span {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #EE363C;
+}
+.leavels-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: #5F0382;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.leavels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.levels-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.levels-block-image {
+    height: 250px;
+    overflow: hidden;
+}
+.levels-block-image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.input-wrap {
+    text-align: center;
+}
+.input-wrap input {
+    transform:scale(2);
+    cursor: pointer;
+    margin: 20px;
+}
+.levels-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.levels-block-name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.levels-block-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.hard {
+    text-align: start;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #5F0382;
+}
+.hard input {
+    transform:scale(1.5);
+}
+.hard span {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #5F0382;
+    font-variant-numeric: lining-nums;
+}
+.screen1-button {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.screen1-button button {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: inline-block;
+    background: #EE363C;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    padding: 23px 150px;
+    cursor: pointer;
+}
+
+.screen1-button button:hover {
+    background: #f9585d;
+}
+.screen1-button button:active {
+    background: #e0262c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*=============== ГЛАВНЫЙ ЭКРАН ==================================*/
+.screen2 {
+    height: 100vh;
+    min-height: 860px;
+    background-image: url(../image/fon2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-block {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.comp {
+    position: relative;
+    
+}
+.unit1 {
+    background-image: url(../image/ur1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 298px;
+    height: 500px;
+}
+.unit2 {
+    background-image: url(../image/ur2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 298px;
+    height: 500px;
+}
+.unit3 {
+    background-image: url(../image/ur3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 298px;
+    height: 500px;
+}
+.dialog-end,
+.dialog {
+    width: 480px;
+    height: 250px;
+    position: absolute;
+    top: -160px;
+    right: -450px;
+    overflow: hidden;
+}
+.dialog-end-img,
+.dialog img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.add-block {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.out {
+    display: flex;
+    align-items: center;
+}
+.out label {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #5F0382;
+}
+.out input {
+    margin-left: 30px;
+    width: 184px;
+    height: 60px;
+    background: #EE363C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+.napominanie {
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #5F0382;
+}
+.overGame {
+    display: none;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #5F0382;
+}
+.overGame span {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #EE363C;
+    border-bottom: 4px solid #EE363C;
+}
+.help {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #5F0382;
+}
+.help-text-wrap {
+    width: 500px;
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.help-text {
+    padding: 15px;
+}
+.add-block .screen1-button button {
+    display: block;
+    width: 100%;
+}
+
+.add-block .check {
+    padding-top: 10px;
+    width: 100%;
+}
+.in-menu {
+    display: flex;
+    padding-top: 80px;
+}
+.in-menu button {
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: auto;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: #C83FFD;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+.in-menu2 button:hover,
+.in-menu button:hover {
+    background: #d05bfe;
+}
+.in-menu2 button:active,
+.in-menu button:active {
+    background: #c536fe;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*=============== ЭКРАН КОНЕЦ =========================*/
+.screen3 {
+    height: 100vh;
+    min-height: 860px;
+    background: #00616F;
+    padding-top: 150px;
+}
+
+.unit4 {
+    background-image: url(../image/un4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 298px;
+    height: 500px;
+    
+    position: relative;
+}
+
+.dialog-end {
+    width: 480px;
+    height: 250px;
+    position: absolute;
+    top: -60px;
+    right: -400px;
+    overflow: hidden;
+}
+.dialog-end-img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.in-menu2 {
+    display: flex;
+    padding-top: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-menu2 button {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: #C83FFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УгадайКА</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalise.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="sait">
+        <div class="screen1">
+            <div class="container">
+                <div class="screen1-title"><span>Угадай цифру</span></div>
+                <div class="leavels-title"><span>Выбери уровень :</span></div>
+                <div class="leavels">
+                    <div class="levels-block">
+                        <div class="levels-block-image">
+                            <img src="./assets/image/ur1.png" alt="">
+                        </div>
+                        <div class="input-wrap">
+                            <input id="lvl-1" type="radio" class="levelInput" name="numMax" value="10" checked>
+                        </div>
+                        <label for="lvl-1" class="levels-block-text">
+                            <span class="levels-block-name">Простой</span>
+                            <span class="levels-block-info">(от 1 до 10)</span>
+                        </label>
+                        <div class="hard">
+                            <input value="3" type="radio" name="hard" class="hard">
+                            <span> 3 хода</span> 
+                        </div>
+                       
+                    </div>
+                    <div class="levels-block">
+                        <div class="levels-block-image">
+                            <img src="./assets/image/ur2.png" alt="">
+                        </div>
+                        <div class="input-wrap">
+                            <input id="lvl-2" type="radio" class="levelInput" name="numMax" value="100">
+                        </div>
+                        <label for="lvl-2" class="levels-block-text">
+                            <span class="levels-block-name">Средний</span>
+                            <span class="levels-block-info">(от 1 до 100)</span>
+                        </label>
+                        <div class="hard">
+                            <input value="7" type="radio" name="hard" class="hard">
+                            <span> 7 ходов</span> 
+                        </div>
+                    </div>
+                    <div class="levels-block">
+                        <div class="levels-block-image">
+                            <img src="./assets/image/ur3.png" alt="">
+                        </div>
+                        <div class="input-wrap">
+                            <input id="lvl-3" type="radio" class="levelInput" name="numMax" value="1000">
+                        </div>
+                        <label for="lvl-3" class="levels-block-text">
+                            <span class="levels-block-name">Сложный</span>
+                            <span class="levels-block-info">(от 1 до 1000)</span>
+                        </label>
+                        <div class="hard">
+                            <input value="12" type="radio" name="hard" class="hard">
+                            <span> 12 ходов</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="screen1-button start">
+                    <button class="start">Старт</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen2 hidden">
+        <div class="container">
+            <div class="content-block">
+                <div class="comp">
+                    <div id="unit" class="unit1">
+                        
+                    </div>
+                    <div class="dialog">
+                        <img class="dialog-img"  src="./assets/image/frazi/text1.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="add-block">
+                    <div class="out">
+                        <label for="add">Введи число:</label>
+                        <input type="number" id="add" title="Введите число от 1 до 9" pattern="[1-9]">
+                    </div>
+                    <div class="napominanie">Играем от 1 до 10</div>
+                    <div class="overGame">Осталось попыток: <span class="overCount">3</span></div>
+                    <div class="help"><span>Уже было попыток ( <span class="help-num"></span> )</span></div>
+                    <div class="help-text-wrap">
+                        <div class="help-text"></div>
+                    </div>
+                    <div class="screen1-button check">
+                        <button class="check">Проверить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="in-menu">
+                <button class="in-menu-btn">Меню</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="screen3 hidden">
+        <div class="container">
+            <div id="unit" class="unit4">
+                <div class="dialog-end">
+                    <img class="dialog-end-img"  src="./assets/image/frazi/GameOuver.png" alt="">
+                </div>
+            </div>
+            <div class="in-menu2">
+                <button class="in-menu-btn2">Меню</button>
+            </div>
+        </div>   
+    </div>
+    
+
+
+
+    
+   
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
